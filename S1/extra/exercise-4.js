@@ -5,12 +5,14 @@ const products = [
   { name: "Inpar de zapatos", sellCount: 6 },
 ];
 
-totalsellcount = 0
+ let totalsellcount = 0
 
 for (let index = 0; index < products.length; index++) {
     const productos = products[index];
     totalsellcount += productos.sellCount
 
-    console.log("El total de ventas es de", totalsellcount)
+    
     
 }
+
+console.log("El total de ventas es de", totalsellcount)

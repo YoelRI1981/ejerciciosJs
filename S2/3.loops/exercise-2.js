@@ -1,11 +1,15 @@
 const alien = {
-    name: 'Wormuck',
-    race: 'Cucusumusu',
-    planet: 'Eden',
-    weight: '259kg'
-}
+  name: "Wormuck",
+  race: "Cucusumusu",
+  planet: "Eden",
+  weight: "259kg",
+};
 
-for (const key in alien) {
-   console.log(alien)
-  
+
+
+for (const datos in alien) {
+  if (alien.hasOwnProperty(datos)) {
+     const element = alien[datos]
+      console.log(`${datos}: ${element}`);
+  }
 }

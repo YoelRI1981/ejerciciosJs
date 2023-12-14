@@ -5,9 +5,12 @@ const toys = [
   { id: 40, name: "El gato con Guantes" },
   { id: 40, name: "El gato felix" },
 ];
+
+let sinGato = []
 for (const juguete of toys) {
-    if (juguete.name.includes(`gato`) ) {
-        toys.splice(i, 1)
+    if (!juguete.name.includes(`gato`) ) {
+        sinGato.push(juguete)
     }
+   
 }
-console.log(toys)
+console.log(sinGato)
