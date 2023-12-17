@@ -1,4 +1,4 @@
-const span$$ = document.querySelectorAll("span[data-function='testMe']")
+const span$$ = document.querySelectorAll("[data-function='testMe']")
 
 console.log(span$$[2].textContent)
 
